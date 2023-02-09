@@ -14,7 +14,11 @@
                 </path>
               </svg>
             </a>
-            <h3>Create/Update Study Room</h3>
+            {% if topic.name == room.topic.name %}  
+              <h3>Create Study Room</h3>
+                {% else %}
+                <h3>Update Study Room</h3>
+                {% endif %}
           </div>
         </div>
         <div class="layout__body">
